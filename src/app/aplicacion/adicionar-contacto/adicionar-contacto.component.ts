@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Contacto, listaContactos } from '../../../app/interfaces/contacto'; 
 
 @Component({
   selector: 'app-adicionar-contacto',
@@ -9,6 +10,7 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 export class AdicionarContactoComponent implements OnInit {
 
   listaPaises:Array<string>;
+  listaContactos:Array<Contacto>;
   formulario:FormGroup;
   nombres:AbstractControl;
   apellidos:AbstractControl;
@@ -52,6 +54,8 @@ export class AdicionarContactoComponent implements OnInit {
       "Uruguay",
       "Venezuela"
     ];
+
+    this.listaContactos = listaContactos;
   }
 
   ngOnInit(): void {
@@ -59,7 +63,13 @@ export class AdicionarContactoComponent implements OnInit {
   }
 
   crear(){
-    console.log(this.pais.value);
+    let contacto:Contacto = {
+      nombres: this.nombres.value,
+      apellidos: this.apellidos.value,
+      genero: this.radio.value,
+      pais: this.pais.value,
+      region: this.ciudad.value
+    }
   }
 
   cancelar(){
