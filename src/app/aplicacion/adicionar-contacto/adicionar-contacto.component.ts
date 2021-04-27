@@ -70,6 +70,8 @@ export class AdicionarContactoComponent implements OnInit {
       pais: this.pais.value,
       ciudad: this.ciudad.value
     }
+
+    this.listaContactos.push(contacto);
   }
 
   cancelar(){
