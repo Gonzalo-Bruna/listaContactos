@@ -68,7 +68,7 @@ export class AdicionarContactoComponent implements OnInit {
       apellidos: this.apellidos.value,
       genero: this.radio.value,
       pais: this.pais.value,
-      region: this.ciudad.value
+      ciudad: this.ciudad.value
     }
   }
 
