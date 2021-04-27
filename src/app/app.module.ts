@@ -7,6 +7,7 @@ import { VistaCartaComponent } from './aplicacion/vista-carta/vista-carta.compon
 import { VistaListaComponent } from './aplicacion/vista-lista/vista-lista.component';
 import { AdicionarContactoComponent } from './aplicacion/adicionar-contacto/adicionar-contacto.component';
 import { HeaderComponent } from './aplicacion/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './aplicacion/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
