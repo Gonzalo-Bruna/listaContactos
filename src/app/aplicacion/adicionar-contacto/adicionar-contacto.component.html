@@ -1,4 +1,4 @@
-<form action="" class="w-50 m-auto" [formGroup]="formulario">
+<form [formGroup]="formulario">
     <div class="mb-3">
         <label  class="form-label">Nombres</label>
         <input type="text" class="form-control" placeholder="Nombres" formControlName="nombres">
@@ -48,16 +48,16 @@
     </div>
     
     <div class="warnings mt-4 alert alert-warning" *ngIf="(nombres.invalid && nombres.touched) || (apellidos.invalid && apellidos.touched) || (radio.invalid && radio.touched) || (pais.invalid && pais.touched) || (ciudad.invalid && ciudad.touched)">
-        <div role="alert" class="mb-1" *ngIf="nombres.invalid && nombres.touched">
+        <div role="alert" class="mb-2" *ngIf="nombres.invalid && nombres.touched">
             El nombre es obligatorio
         </div>
-        <div role="alert" class="mb-1" *ngIf="apellidos.invalid && apellidos.touched">
+        <div role="alert" class="mb-2" *ngIf="apellidos.invalid && apellidos.touched">
             Los apellidos son obligatorios
         </div>
-        <div role="alert" class="mb-1" *ngIf="radio.invalid && radio.touched">
+        <div role="alert" class="mb-2" *ngIf="radio.invalid && radio.touched">
             El radio es obligatorio
         </div>
-        <div role="alert" class="mb-1" *ngIf="pais.invalid && pais.touched">
+        <div role="alert" class="mb-2" *ngIf="pais.invalid && pais.touched">
             País es obligatorio
         </div>
         <div role="alert" *ngIf="ciudad.invalid && ciudad.touched">
