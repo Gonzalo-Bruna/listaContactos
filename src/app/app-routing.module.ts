@@ -5,9 +5,9 @@ import { VistaCartaComponent } from '../app/aplicacion/vista-carta/vista-carta.c
 import { VistaListaComponent } from '../app/aplicacion/vista-lista/vista-lista.component';
 
 const routes: Routes = [
-  {path: '', component: VistaCartaComponent},
+  {path: 'vistaCarta', component: VistaCartaComponent},
   {path: 'vistaLista', component: VistaListaComponent},
-  {path:'adicionarContacto', component: AdicionarContactoComponent}
+  {path:'', component: AdicionarContactoComponent}
 ];
 
 @NgModule({
