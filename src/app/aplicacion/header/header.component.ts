@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { Location } from "@angular/common";
-import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-header',
