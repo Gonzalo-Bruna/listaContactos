@@ -1,1 +1,19 @@
-<p>header works!</p>
+<header>
+
+    <nav ngbNav #nav="ngbNav" class="nav-tabs">
+        <ng-container ngbNavItem>
+            <a [routerLink]="['']" routerLinkActive="router-link-active"  ngbNavLink>Vista Carta</a>
+        </ng-container>
+
+        <ng-container ngbNavItem>
+            <a [routerLink]="['/vistaLista']" routerLinkActive="router-link-active"  ngbNavLink>Vista Lista</a>
+        </ng-container>
+
+        <ng-container ngbNavItem>
+            <a [routerLink]="['/adicionarContacto']" routerLinkActive="router-link-active"  ngbNavLink>Adicionar Nota</a>
+        </ng-container>
+    </nav>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+</header>

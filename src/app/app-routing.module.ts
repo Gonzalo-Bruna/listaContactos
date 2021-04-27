@@ -6,7 +6,7 @@ import { VistaListaComponent } from '../app/aplicacion/vista-lista/vista-lista.c
 
 const routes: Routes = [
   {path: '', component: VistaCartaComponent},
-  {path: 'vistaCarta', component: VistaListaComponent},
+  {path: 'vistaLista', component: VistaListaComponent},
   {path:'adicionarContacto', component: AdicionarContactoComponent}
 ];
 
