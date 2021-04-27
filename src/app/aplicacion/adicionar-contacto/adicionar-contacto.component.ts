@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Contacto, listaContactos } from '../../../app/interfaces/contacto'; 
+import { Contacto, listaContactos } from '../../../app/interfaces/contacto';
 
 @Component({
   selector: 'app-adicionar-contacto',

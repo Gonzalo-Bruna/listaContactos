@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Contacto, listaContactos } from '../../../app/interfaces/contacto';
 @Component({
   selector: 'app-vista-lista',
   templateUrl: './vista-lista.component.html',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaListaComponent implements OnInit {
 
-  constructor() { }
+  contactos:Array<Contacto>;
+
+  constructor() { 
+    this.contactos = listaContactos;
+  }
 
   ngOnInit(): void {
   }
