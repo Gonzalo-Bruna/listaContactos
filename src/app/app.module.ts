@@ -8,6 +8,7 @@ import { VistaListaComponent } from './aplicacion/vista-lista/vista-lista.compon
 import { AdicionarContactoComponent } from './aplicacion/adicionar-contacto/adicionar-contacto.component';
 import { HeaderComponent } from './aplicacion/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
