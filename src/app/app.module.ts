@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VistaCartaComponent } from './aplicacion/vista-carta/vista-carta.component';
+import { VistaListaComponent } from './aplicacion/vista-lista/vista-lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VistaCartaComponent
+    VistaCartaComponent,
+    VistaListaComponent
   ],
   imports: [
     BrowserModule,
