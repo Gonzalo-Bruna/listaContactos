@@ -3,7 +3,7 @@ export interface Contacto {
     apellidos:string;
     genero:string;
     pais:string;
-    ciudad:string;
+    region:string;
 }
 
 export let listaContactos:Array<Contacto> = [];
