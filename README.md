@@ -1,9 +1,13 @@
 # ListaContactos
 
+Contact List made with angular for the web engineering course!
+If you wanna see the project working without compiling with a dev server, visit [this link](https://milista-contactos.web.app/).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
 ## Development server
 
+Before running, make sure to use the command `npm intall` to install node_module directory to run the program properly.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
