@@ -1,24 +1,28 @@
-<div class="alert alert-primary" role="alert" *ngIf="contactos.length == 0">
-    Aun no has añadido ningun contacto
+<div class="componente-lista">
+    <div class="alert alert-primary" role="alert" *ngIf="contactos.length == 0">
+        Aun no has añadido ningun contacto
+    </div>
+    
+    <table class="table table-bordered" *ngIf="contactos.length > 0">
+        <thead>
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Género</th>
+                <th>País</th>
+                <th>Ciudad</th>
+            </tr>
+            
+        </thead>
+        <tbody *ngFor="let item of contactos">
+            <tr>
+                <td>{{item.nombres}} {{item.apellidos}}</td>
+                <td>{{item.genero}}</td>
+                <td>{{item.pais}}</td>
+                <td>{{item.ciudad}}</td>
+            </tr>
+        </tbody>
+        
+    </table>
 </div>
 
-<table class="table table-bordered" *ngIf="contactos.length > 0">
-    <thead>
-        <tr>
-            <th>Nombre Completo</th>
-            <th>Género</th>
-            <th>País</th>
-            <th>Ciudad</th>
-        </tr>
-        
-    </thead>
-    <tbody *ngFor="let item of contactos">
-        <tr>
-            <td>{{item.nombres}} {{item.apellidos}}</td>
-            <td>{{item.genero}}</td>
-            <td>{{item.pais}}</td>
-            <td>{{item.ciudad}}</td>
-        </tr>
-    </tbody>
-    
-</table>
+

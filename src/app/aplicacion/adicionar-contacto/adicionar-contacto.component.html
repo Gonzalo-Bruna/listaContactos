@@ -49,19 +49,27 @@
     
     <div class="warnings mt-4 alert alert-warning" *ngIf="(nombres.invalid && nombres.touched) || (apellidos.invalid && apellidos.touched) || (radio.invalid && radio.touched) || (pais.invalid && pais.touched) || (ciudad.invalid && ciudad.touched)">
         <div role="alert" class="mb-2" *ngIf="nombres.invalid && nombres.touched">
-            El nombre es obligatorio
+            <i class="fas fa-exclamation-triangle"></i> El nombre es obligatorio
         </div>
         <div role="alert" class="mb-2" *ngIf="apellidos.invalid && apellidos.touched">
-            Los apellidos son obligatorios
+            <i class="fas fa-exclamation-triangle"></i> Los apellidos son obligatorios
         </div>
         <div role="alert" class="mb-2" *ngIf="radio.invalid && radio.touched">
-            El radio es obligatorio
+            <i class="fas fa-exclamation-triangle"></i> El radio es obligatorio
         </div>
         <div role="alert" class="mb-2" *ngIf="pais.invalid && pais.touched">
-            País es obligatorio
+            <i class="fas fa-exclamation-triangle"></i> País es obligatorio
         </div>
         <div role="alert" *ngIf="ciudad.invalid && ciudad.touched">
-            Ciudad es obligatorio
+            <i class="fas fa-exclamation-triangle"></i> Ciudad es obligatorio
         </div>
     </div>
+
+    <div class="alert alert-success mt-5 alert-contacto-agregado d-none" id="alert-contacto-agregado" role="alert">
+        <div>
+            <strong>¡Usuario añadido exitosamente!</strong> Revisa las vistas en el menú superior
+        </div>
+        <button type="button" class="btn btn-info" (click)="cerrarAlert()">Cerrar</button>
+    </div>
 </form>
+

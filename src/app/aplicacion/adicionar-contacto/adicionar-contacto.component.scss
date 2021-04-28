@@ -1,6 +1,20 @@
 form{
+    width: 80%;
+    margin: auto;
     padding: 35px 40px;
     border: 1px solid #666;
     border-radius: 6px;
     margin-bottom: 30px;
+}
+
+.alert-contacto-agregado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 540px){
+    .alert-contacto-agregado{
+        flex-direction: column;
+    }
 }

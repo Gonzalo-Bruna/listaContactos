@@ -1,0 +1,26 @@
+.vista-carta{
+    width: 90%;
+    margin: auto;
+
+    .carta{
+        max-width: 540px;
+        width:auto;
+        padding-left: 30px;
+
+        .img{
+            max-height: 160px;
+            height: 100%;
+            width: 100%;
+        }
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+
+
+
+

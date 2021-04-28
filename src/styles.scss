@@ -4,6 +4,18 @@
 @import '~bootstrap/scss/bootstrap';
 
 body{
-    width: 50%;
+    width: 70%;
     margin: auto;
+}
+
+@media (max-width: 767px) {
+    body{
+        width: 80%;
+    }
+}
+
+@media (max-width: 540px) {
+    body{
+        width: 100%;
+    }
 }

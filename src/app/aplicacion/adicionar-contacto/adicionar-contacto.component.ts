@@ -72,6 +72,8 @@ export class AdicionarContactoComponent implements OnInit {
     }
 
     this.listaContactos.push(contacto);
+    this.mostrarAlert();
+    this.limpiar();
   }
 
   cancelar(){
@@ -80,6 +82,29 @@ export class AdicionarContactoComponent implements OnInit {
     this.radio.setValue("");
     this.pais.setValue("");
     this.ciudad.setValue("");
+  }
+
+  limpiar(){
+    this.apellidos.reset();
+    this.radio.reset();
+    this.pais.reset();
+    this.ciudad.reset();
+    this.nombres.reset();
+  }
+
+  mostrarAlert(){
+    let alert:any;
+    alert = document.getElementById("alert-contacto-agregado");
+    if(alert.classList.contains("d-none")){
+      alert.classList.toggle("d-none");
+    }
+    
+  }
+
+  cerrarAlert(){
+    let alert:any;
+    alert = document.getElementById("alert-contacto-agregado");
+    alert.classList.toggle("d-none");
   }
 
 }

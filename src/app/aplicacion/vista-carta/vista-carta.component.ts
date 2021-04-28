@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contacto, listaContactos } from '../../../app/interfaces/contacto';
 
 @Component({
   selector: 'app-vista-carta',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaCartaComponent implements OnInit {
 
-  constructor() { }
+  contactos:Array<Contacto>;
+
+  constructor() {
+    this.contactos = listaContactos;  
+  }
 
   ngOnInit(): void {
   }
